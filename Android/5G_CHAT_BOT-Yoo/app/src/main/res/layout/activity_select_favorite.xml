@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.alex.dg_chatbot.UI.Login.SelectFavoriteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/sfTop"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:src="@drawable/select_favorite0" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:src="@drawable/select_favorite" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:padding="0.5dp"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:id="@+id/flNews"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/news" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동국주요뉴스"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flNewsCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/flFood"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sushi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오늘의 식단"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flFoodCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flLib"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/books" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중앙도서관"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flLibCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:padding="0.5dp"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:id="@+id/flSche"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_sche" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이번 달 학사일정"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flScheCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/flJob"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/job" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="취업센터"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flJobCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flVol"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/charity" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="봉사 프로그램"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flVolCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:padding="0.5dp"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:id="@+id/flMap"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캠퍼스 맵"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flMapCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/flTimetable"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/timetale" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내 시간표"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flTimetableCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flMan"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="교직원 검색"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flManCheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#34000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/check" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llStart"
+        android:background="#fcd388"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택 완료"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

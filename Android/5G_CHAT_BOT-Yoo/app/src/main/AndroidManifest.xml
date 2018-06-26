@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.alex.dg_chatbot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".FirebaseApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".UI.Main.MainActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".UI.Login.SplashActivity" />
+        <activity android:name=".UI.Tutorial.TutorialActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Util.ActivityOldActivity" />
+        <activity android:name=".UI.Login.SelectFavoriteActivity" />
+        <activity android:name=".UI.Main.chat.ChatActivity" />
+        <activity android:name=".UI.Login.SignUpActivity" />
+        <activity android:name=".UI.Login.LoginActivity" />
+        <activity android:name=".UI.Login.SignInActivity" />
+        <activity android:name=".EclassCrawl.SocketActivity" />
+        <activity android:name=".EclassCrawl.JsoupActivity" />
+        <activity android:name=".UI.Main.chat.NoticeModel.NoticeFromChatActivity"></activity>
+        <activity android:name=".UI.Main.chat.ScheduleModel.ScheduleActivity"></activity>
+        <activity android:name=".UI.Main.chat.LectureModel.LectureActivity"></activity>
+    </application>
+
+</manifest>

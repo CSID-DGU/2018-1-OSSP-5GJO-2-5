@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcd388"
+    tools:context=".UI.Tutorial.Tuto3Fragment">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tuto3_background_image"
+        android:id="@+id/tuto3"/>
+
+    <ImageButton
+        android:layout_marginTop="40dp"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:background="@drawable/start_round_button"
+        android:id="@+id/btStart"/>
+
+</FrameLayout>

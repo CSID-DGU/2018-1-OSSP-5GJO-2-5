@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.alex.dg_chatbot"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NoticeModel.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://raw.githubusercontent.com/smilefam/SendBird-SDK-Android/master/" }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    implementation 'com.android.support:support-v4:26.0.0-beta1'
+
+    testImplementation 'junit:junit:4.12'
+    compile 'com.sendbird.sdk:sendbird-android-sdk:3.0.55'
+    compile 'org.jsoup:jsoup:1.11.2'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.6.3'
+    compile 'com.android.support:recyclerview-v7:26.+'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'junit:junit:4.12'
+
+    compile 'com.github.f0ris.sweetalert:library:1.5.1'
+
+    compile 'com.pnikosis:materialish-progress:1.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    compile 'ai.api:sdk:2.0.7@aar'
+    compile 'ai.api:libai:1.6.12'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'commons-io:commons-io:2.4'
+
+    //firebase
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.firebaseui:firebase-ui-auth:3.2.2'
+    compile 'com.google.firebase:firebase-database:11.8.0'
+    compile 'com.firebaseui:firebase-ui-database:2.3.0'
+
+    //apache
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    //noinspection DuplicatePlatformClasses
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+
+    compile 'com.wdullaer:materialdatetimepicker:3.6.0'
+
+    implementation files('/Users/alex/Downloads/jackson-databind-2.9.0.jar')
+}
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

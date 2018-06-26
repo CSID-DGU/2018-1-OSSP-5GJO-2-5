@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f39c12</color>
+    <color name="colorPrimaryDark">#fcd388</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dongguk_chatbot_theme_color">#f39c12</color>
+    <color name="dongguk_chat_color">#ed9509</color>
+    <color name="ivory">#FFFFF0</color>
+    <color name="lightOrange">#fcd388</color>
+    <color name="transparent">#00000000</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alex.dg_chatbot.EclassCrawl.SocketActivity">
+
+    <Button
+        android:id="@+id/btPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID : " />
+
+        <EditText
+            android:id="@+id/etUdrimsID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PWD : " />
+
+        <EditText
+            android:id="@+id/etUdrimsPwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btPortal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="portal" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aaa" />
+
+</LinearLayout>
