@@ -8,7 +8,7 @@ This is rule-based chatbot for Dongguk student or prof who want to get info abou
 
 # Team
 
-Min Young Ki(DialogFlow) : djrjtk@dongguk.edu
+Jin Young Ki(DialogFlow) : djrjtk@dongguk.edu
 
 Yoo Keun Chang(Android & Python) : dinermint@dongguk.edu
 
